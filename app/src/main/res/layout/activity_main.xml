@@ -10,16 +10,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!--  This is your template view -->
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/my_template"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+
         <Button
             android:id="@+id/btnReload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="50dp"
             android:text="@string/reload"
+            app:layout_constraintTop_toBottomOf="@+id/my_template"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/factsTv"

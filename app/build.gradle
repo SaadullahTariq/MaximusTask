@@ -22,6 +22,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            resValue "string", "AdmobAppid", "ca-app-pub-3940256099942544~3347511713"
+            resValue "string", "AdmobIntersterial", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "AdmobNative", "ca-app-pub-3940256099942544/2247696110"
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -58,5 +63,9 @@ dependencies {
 
     // LiveData
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+
+    // Admob Ads
+    implementation 'com.google.android.gms:play-services-ads:22.0.0'
+    implementation project(':nativetemplates')
 
 }
