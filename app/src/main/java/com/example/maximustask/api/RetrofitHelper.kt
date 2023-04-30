@@ -7,7 +7,7 @@ object RetrofitHelper {
 
     private const val BASE_URL = "https://cat-fact.herokuapp.com/"
 
-    fun getInstance() : Retrofit {
+    fun getInstance(): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
