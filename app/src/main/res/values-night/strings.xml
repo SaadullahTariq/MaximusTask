@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MaximusTask</string>
     <string name="interstitial_ad">interstitial ad</string>
     <string name="reload">Reload</string>
-    <string name="facts">Fact is Loading. Please Wait</string>
+    <string name="facts">Fact is Loading. Please Wait...</string>
 </resources>

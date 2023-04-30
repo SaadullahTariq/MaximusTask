@@ -11,6 +11,8 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(private val repository: FactsRepository) : ViewModel() {
 
+    var currentFact: String? = null
+
     init {
         viewModelScope.launch(Dispatchers.IO) {
 
