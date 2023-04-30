@@ -1,6 +1,7 @@
 package com.example.maximustask.viewmodels
 
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.maximustask.models.CatFacts
@@ -17,7 +18,7 @@ class MainViewModel(private val repository: FactsRepository) : ViewModel() {
         }
     }
 
-    val facts : LiveData<CatFacts>
+    val facts : MutableLiveData<List<CatFacts>>
     get() = repository.facts
 
 }

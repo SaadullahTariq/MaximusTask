@@ -7,9 +7,9 @@ import com.example.maximustask.models.CatFacts
 
 class FactsRepository(private val factService: FactService) {
 
-    private val factLiveData = MutableLiveData<CatFacts>()
+    private val factLiveData = MutableLiveData<List<CatFacts>>()
 
-    val facts : LiveData<CatFacts>
+    val facts : MutableLiveData<List<CatFacts>>
     get() = factLiveData
 
     suspend fun getFacts(){

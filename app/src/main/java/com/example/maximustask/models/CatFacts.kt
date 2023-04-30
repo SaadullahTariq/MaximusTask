@@ -1,3 +1,5 @@
 package com.example.maximustask.models
 
-class CatFacts : ArrayList<CatFactsItem>()
+data class CatFacts(
+    val fact: String
+)

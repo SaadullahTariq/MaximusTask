@@ -25,8 +25,10 @@ class MainActivity : AppCompatActivity() {
         mainViewModel =
             ViewModelProvider(this, MainViewModelFactory(repository))[MainViewModel::class.java]
 
-        mainViewModel.facts.observe(this) {
-            Log.d("MaximusTaskData", "onCreate: $it")
+        mainViewModel.facts.observe(this) {facts ->
+            facts.forEach {
+                Log.d("MaximusTaskData", it.fact)
+            }
         }
 
     }

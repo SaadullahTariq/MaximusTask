@@ -7,6 +7,6 @@ import retrofit2.http.GET
 interface FactService {
 
     @GET("/facts")
-    suspend fun getFact() : Response<CatFacts>
+    suspend fun getFact() : Response<List<CatFacts>>
 
 }
